@@ -9,3 +9,7 @@ pre {
   background-color: inherit;
   border: none;
 }
+
+.details {
+  float: right;
+}
