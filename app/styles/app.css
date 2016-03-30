@@ -1,3 +1,11 @@
 .jumbotron {
   text-align: center;
 }
+
+pre {
+  font-family: sans-serif;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  border: none;
+}
