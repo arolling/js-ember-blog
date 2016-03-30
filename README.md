@@ -52,3 +52,4 @@ Specify what it takes to deploy your app.
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
 https://github.com/jmurphyau/ember-truth-helpers
+https://www.toptal.com/emberjs/a-thorough-guide-to-ember-data
