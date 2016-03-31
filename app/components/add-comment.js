@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         words: this.get('words'),
         post: this.get('post')
       };
+
       this.set('clickAddComment', false);
       this.sendAction('addComment', params);
     }

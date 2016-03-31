@@ -1,0 +1,8 @@
+<form>
+  <div class="form-group">
+    <label for="words">Comment:</label>
+    {{textarea rows=4 class="form-control" value=comment.words id="words"}}
+  </div>
+  <button class="btn btn-lg btn-default btn-success" {{action "updateComment" comment}}>Update Comment</button>
+  <button class="btn btn-danger details" {{action "deleteComment" comment}}>Delete Comment</button>
+</form>

@@ -1,13 +1,13 @@
 
 <div class="list-group">
   {{#each sortedComments as |comment|}}
-    <div class="list-group-item">
+    {{#link-to 'comment' comment.id class="list-group-item"}}
       <div class="list-group-item-text">
         {{comment.words}}
       </div>
       <h4 class="list-group-item-heading small">
         Posted {{moment-from-now comment.createdAt}} by {{comment.user}}
       </h4>
-    </div>
+    {{/link-to}}
   {{/each}}
 </div>

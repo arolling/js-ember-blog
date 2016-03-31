@@ -1,0 +1,6 @@
+
+<h2>Comment by {{model.user}} on {{#link-to 'entry' model.post}}{{model.post.title}}{{/link-to}} </h2>
+
+{{comment-tile comment=model }}
+
+{{update-comment comment=model updateComment="updateComment" destroyComment="deleteComment"}}
