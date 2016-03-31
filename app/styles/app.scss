@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.badge {
+  float: right;
+}
+
+.panel-default {
+  .panel-heading {
+    .badge {
+      background-color: red;
+    }
+  }
+
+}
+
 pre {
   font-family: sans-serif;
   font-size: inherit;
@@ -23,4 +36,8 @@ pre {
 
 body {
   margin-bottom: 25px;
+}
+
+.panel-footer {
+  padding-bottom: 15px;
 }
