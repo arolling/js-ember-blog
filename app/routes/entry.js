@@ -16,7 +16,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     destroyPost(post) {
-      post.destroyRecord();
+      var deleted_comments = post.get('comments').map(function(comment){
+        return comment.destroyRecord();
+      });
+      Ember.RSVP.all(deleted_comments).then(function(){
+        return post.destroyRecord();
+      });
       this.transitionTo('index');
     },
     newComment(params) {

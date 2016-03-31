@@ -10,6 +10,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         datePosted: this.get('datePosted')
       };
+      console.log(params.datePosted);
       this.sendAction('addPost', params);
     }
   }
