@@ -10,7 +10,7 @@
 
   </div>
   <div class="panel-footer">
-    Posted: {{post.datePosted}}
+    Posted: {{moment-from-now post.datePosted}}
     {{#link-to 'entry' post.id type="button" class="btn btn-default btn-sm details"}}Read More{{/link-to}}
   </div>
 </div>
