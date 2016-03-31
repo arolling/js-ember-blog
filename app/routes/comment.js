@@ -6,7 +6,6 @@ export default Ember.Route.extend({
   },
   actions: {
     updateComment(comment, params) {
-      console.log(comment);
       Object.keys(params).forEach(function(key) {
         if(params[key] !==undefined && params[key] !== "") {
           comment.set(key, params[key]);

@@ -1,13 +1,11 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">{{post.title}} - by {{post.author}} <span class="badge">{{post.comments.length}}</span></h3>
+    <h3 class="panel-title">{{post.title}} - by {{post.author}} {{has-comments post}}</h3>
   </div>
   <div class="panel-body">
-
     {{#truncate-multiline lines=2 showButton=false}}
-    {{post.content}}
+      {{post.content}}
     {{/truncate-multiline}}
-
   </div>
   <div class="panel-footer">
     Posted: {{moment-from-now post.datePosted}}
