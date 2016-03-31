@@ -1,8 +1,8 @@
 <div class="row">
   <div class="col-sm-7">
     {{post-detail post=model}}
-    {{add-comment post=model addComment="newComment"}}
     {{show-comments post=model}}
+    {{add-comment post=model addComment="newComment"}}
   </div>
   <div class="col-sm-5">
     {{update-post post=model updatePost="update" destroyEntry="destroyPost"}}
