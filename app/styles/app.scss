@@ -1,5 +1,68 @@
+$green: #A0A883;
+$purple: #451556;
+$pink: #F6B6CF;
+$beige: #EFE9E7;
+$blue: #B5C3E5;
+
 .jumbotron {
   text-align: center;
+  background-color: $purple;
+  color: $pink;
+}
+
+.navbar {
+  background-color: $blue;
+  margin-bottom: 0px;
+  a {
+    color: $purple;
+  }
+}
+
+.navbar-default {
+  border-color: $blue;
+  .navbar-nav {
+    li {
+      a {
+        color: $purple;
+      }
+    }
+  }
+}
+
+.list-group {
+  border: none;
+  .list-group-item{
+    border: none;
+  }
+  .list-group-item:hover{
+    background-color: $purple;
+    color: $beige;
+    .list-group-item-heading{
+      color: $beige;
+    }
+  }
+}
+
+.list-group-item:nth-child(odd) {
+  background-color: $pink;
+
+}
+
+.list-group-item:nth-child(even) {
+  background-color: $blue;
+}
+
+.form-control {
+  background-color: $beige;
+}
+.btn {
+  border: none;
+}
+
+.btn-default {
+  background-color: $purple;
+  color: $beige;
+  border: none;
 }
 
 .badge {
@@ -7,12 +70,20 @@
 }
 
 .panel-default {
+  border: none;
   .panel-heading {
+    background-color: $blue;
+    border: none;
     .badge {
-      background-color: red;
+      background-color: $purple;
     }
   }
-
+  .panel-body {
+    background-color: $beige;
+  }
+  .panel-footer {
+    background-color: $blue;
+  }
 }
 
 pre {
@@ -36,6 +107,7 @@ pre {
 
 body {
   margin-bottom: 25px;
+  background-color: $green;
 }
 
 .panel-footer {
