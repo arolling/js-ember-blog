@@ -16,3 +16,7 @@ pre {
 .details {
   float: right;
 }
+
+.list-group-item-heading {
+  margin-top: 5px;
+}
