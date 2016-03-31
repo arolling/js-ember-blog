@@ -12,6 +12,14 @@ export default Ember.Component.extend({
       if(confirm('Do you want to delete this comment forever?')){
         this.sendAction('destroyComment', comment);
       }
+    },
+    disemvowel(comment){
+      var moderated = comment.get("words").replace(/[aeiou]/gi, '');
+      comment.set("words", moderated);
+      var params = {
+        words: moderated
+      };
+      this.sendAction('updateComment', comment, params);
     }
   }
 });
